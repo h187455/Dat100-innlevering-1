@@ -1,8 +1,11 @@
 package no.hvl.dat100;
-
+import java.util.Scanner;
 public class O2 {
 	public static void main(String[] args) {
-		int poeng=99;
+		Scanner objekt = new Scanner(System.in);
+		System.out.println("Skriv inn eit tal:");
+		String tal = objekt.nextLine();
+		int poeng=Integer.valueOf(tal);
 		if(poeng<=100 && poeng>=90) {
 			System.out.print("A");
 		}

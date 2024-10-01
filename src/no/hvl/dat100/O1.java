@@ -1,9 +1,12 @@
 package no.hvl.dat100;
-
+import java.util.Scanner;
 public class O1 {
 	
 	public static void main(String[] args) {
-		int bruttoinntekt=452045;
+		Scanner objekt = new Scanner(System.in);
+		System.out.println("Skriv inn eit tal:");
+		String tal = objekt.nextLine();
+		int bruttoinntekt=Integer.valueOf(tal);
 		if(bruttoinntekt>208051 && bruttoinntekt<292850) {
 			System.out.print(bruttoinntekt*0.017);
 		}
